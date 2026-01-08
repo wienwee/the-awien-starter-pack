@@ -1,0 +1,917 @@
+body {
+    margin: 0;
+    font-family: georgia;
+    color: #9e182b;
+    background-image: url(pink_background.jfif);
+}
+
+.main-header {
+    background-color: #f2afbc; 
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px dashed #9e182b;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background-color: f2e0d2;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 2px groove transparent;
+    transition: 0.3s;
+    color: #9e182b;
+}
+
+
+.nav-link:hover {
+    border: 2px groove #9e182b;
+    background: #f9cbd6;
+    border-radius: 10px;
+    color: #9e182b;
+}
+
+.nav-link:visited {
+    background-color: #c5cc82;
+    color: #97a13b;
+    border: 2px groove #97a13b;
+    border-radius: 10px;
+}
+
+h4 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 40px;
+    color: #9e182b;
+    margin-left: 30px;
+    cursor: pointer;
+    display: flex;
+}
+
+h5 {
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    display: flex;
+    color: #97a13b;
+    font-style: italic;
+}
+
+.title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    color: #9e182b;
+    margin-left: 30px;
+    cursor: pointer;
+    display: flex;
+}
+
+.body {
+    text-align: left;
+    margin-left: 30px;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+/* 2. Text Side */
+.hero-content {
+  flex: 1;
+}
+
+
+/* 3. The "Work Hard, Play Hard" Motto */
+.motto-box {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 10px 25px;
+  background-color: #9e182b;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(39, 174, 96, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.motto-box:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.vibe {
+  color: white;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* 4. The Image Side */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 30px;
+  border: 2.5px dashed; #9e182b;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  transition: all 0.5s ease;
+}
+
+.hero-image img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 50px rgba(0,0,0,0.15);
+}
+
+/* Responsive: Stack vertically on small screens */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-title { justify-content: center; }
+}
+.backstory {
+    type: i;
+}
+
+.backstory::marker {
+    color: #97a13b;
+}
+.button1 {
+  display: block;
+  margin: 20px auto;
+  justify-content: center; 
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+   font-weight: bold;
+    padding: 5px 10px;
+    border: 2px groove transparent;
+    transition: 0.3s;
+    color: #9e182b;
+}
+
+.button1:hover {
+    border: 2px groove #9e182b;
+    background: #f9cbd6;
+    border-radius: 10px;
+    color: #9e182b;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border: 2px dashed  #9e182b;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    align-items: center;
+    width: 95%;
+    background-color: #f2afbc; 
+}
+
+.float-right {
+    float: right;
+    width: 150px;
+    height: 200px;
+    margin-right: 50px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.fun-footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #f2afbc; 
+    color: #9e182b;
+    border-top: 5px dashed #9e182b; 
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.social-icon i {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+
+.insta:hover, .tiktok:hover, .youtube:hover { 
+    border: 2px groove #9e182b;
+    background: #f9cbd6;
+    border-radius: 10px;
+    color: #9e182b;
+}
+
+.vibe {
+    color: #97a13b;
+    font-style: italic;
+}
+
+.catgif {
+    width: 55px;
+    height: 55px;
+    margin-left: 3px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.polaroid {
+    background-color: white;
+    padding: 15px 15px 40px 15px ;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.2); 
+  transform: rotate(-3deg); 
+  text-align: center;
+  width: 15%; 
+  margin: 30px auto;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.backstory-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: georgia, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* The Individual Chapter Cards */
+.chapter-card {
+  position: relative; /* Necessary for the badge */
+  background-color: #ffffff;
+  border: 2px solid #9e182b; /* Clean, subtle border */
+  border-radius: 15px;      /* Rounded corners */
+  padding: 40px 30px 30px 30px;
+  margin-bottom: 50px;       /* Space between chapters */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Soft "floating" shadow */
+  transition: transform 0.3s ease;
+}
+
+/* Fun hover effect: the card lifts slightly */
+.chapter-card:hover {
+  transform: translateY(-5px);
+  border-color: #97a13b; /* Border changes color on hover */
+}
+
+/* The "Chapter" Badge at the top of each card */
+.chapter-badge {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  background-color: #9e182b;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Heading Styles */
+.chapter-card h5 {
+  color: #9e182b;
+  margin-top: 0;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 10px;
+}
+
+/* Paragraph spacing */
+.chapter-card p {
+  line-height: 1.8;
+  color: #9e182b;
+  font-size: 1.1rem;
+}
+
+.chapter-card:nth-child(even) {
+  background-color: #f9cbd6; /* Very light blue tint for even chapters */
+}
+
+.traits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive! */
+  gap: 20px;
+  padding: 20px;
+}
+
+.trait-card {
+  padding: 25px;
+  border-radius: 15px;
+  color: white; /* White text looks great on colored backgrounds */
+  transition: transform 0.3s ease;
+}
+
+.mbti { background-color: #97a13b; }      /* green */
+.strengths { background-color: #9e182b; } /* dark red */
+.growth { background-color: #f9cbd6; }    /* soft pink */
+
+.trait-card:hover {
+  transform: scale(1.05); /* Pop effect */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.trait-card h3 {
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  padding-bottom: 10px;
+}
+
+.progress-container {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background-color: #9e182b; /* ENFP Purple */
+  color: white;
+  padding: 5px;
+  text-align: right;
+  font-size: 12px;
+  border-radius: 20px;
+}
+
+.edu-table {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; /* It's helpful to set a width so it doesn't touch the screen edges */
+  max-width: 1000px;
+  border-collapse: collapse;
+  font-size: 1rem;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden; /* Makes the rounded corners work */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.edu-table thead tr {
+  background-color: #9e182b; 
+  color: #ffffff;
+  text-align: left;
+}
+
+.edu-table th, .edu-table td {
+  padding: 12px 15px;
+}
+
+.edu-table tbody tr:nth-of-type(even) {
+  background-color: #f9cbd6; /* Zebra stripes */
+}
+
+.edu-table td:hover {
+    background-color: #97a13b;
+}
+
+.roadmap {
+  position: relative;
+  padding: 20px 0;
+  list-style: none;
+}
+
+/* The vertical line (the "road") */
+.roadmap::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #9e182b;
+}
+
+.checkpoint {
+  position: relative;
+  margin-bottom: 30px;
+  padding-left: 60px;
+}
+
+.checkpoint .icon {
+  position: absolute;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 4px solid #97a13b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.checkpoint.active .icon {
+  border-color: #9e182b; /* Different color for current school */
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Container styling */
+.orc-section {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; /* It's helpful to set a width so it doesn't touch the screen edges */
+  max-width: 1000px;
+  font-family: georgia;
+}
+
+.orc-title {
+  color: #9e182b; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table styling */
+.orc-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px; /* Adds a gap between rows */
+}
+
+.orc-table thead th {
+  background-color: #9e182b; 
+  color: white;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.orc-table tbody tr {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.orc-table tbody tr:hover {
+  transform: scale(1.01);
+  background-color: #fafffa; /* Very light green on hover */
+}
+
+.orc-table td {
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* Image styling inside the table */
+.table-img-container {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px; /* Rounded corners for photos */
+  border: 2px solid #9e182b;
+}
+
+.table-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the photo doesn't stretch */
+  transition: transform 0.3s;
+}
+
+.table-img:hover {
+  transform: scale(1.2); /* Zoom effect on the photo */
+}
+
+/* The Grid Layout */
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+/* The Main Card Container */
+.media-card {
+  position: relative; /* Crucial for layering */
+  height: 350px;      /* Fixed height for uniformity */
+  border-radius: 20px;
+  overflow: hidden;   /* Ensures zoomed images don't spill out */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+/* The Background Media (Image or Video) */
+.media-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Sits at the back */
+  transition: transform 0.5s ease-in-out; /* Slow, smooth zoom transition */
+}
+
+/* Styling for Images inside the background */
+.media-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills the space without stretching */
+}
+
+/* Styling for Videos (Iframes) inside the background */
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none; /* Prevents clicking pause/play on background video */
+}
+
+/* The Dark Gradient Overlay (Makes text readable) */
+.media-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Gradient from transparent top to dark bottom */
+  background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.8) 100%);
+  z-index: 2; /* Sits on top of image, below text */
+}
+
+/* The Text Content */
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  color: white;
+  z-index: 3; /* Sits on top of everything */
+  transition: bottom 0.3s ease;
+}
+
+/* --- INTERACTIVE HOVER EFFECTS --- */
+
+/* 1. Zoom the background media */
+.media-card:hover .media-bg {
+  transform: scale(1.1); /* Zooms in by 10% */
+}
+
+/* 2. Slight bump up for the text */
+.media-card:hover .card-content {
+  bottom: 10px;
+}
+
+/* Typography Styling */
+.card-content .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This makes it act like a background image */
+  display: block;
+}
+
+.music-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #a8e063, #5d9b31); /* Matcha Green Gradient */
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 450px;
+  margin: 30px auto; /* Centered on the page */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  color: #9e182b;
+  font-family: georgia;
+}
+
+.album-art {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.album-art img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%; /* Makes it a circle */
+  border: 3px solid white;
+  object-fit: cover;
+}
+
+/* Fun Animation: Rotating Record */
+.rotating {
+  animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.song-info {
+  flex-grow: 1;
+}
+
+.song-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.song-artist {
+  margin: 5px 0 15px 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Styling the actual Audio Bar */
+.custom-audio {
+  width: 100%;
+  height: 35px;
+  filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Makes the bar white/transparent-ish to match the card */
+  outline: none;
+}
+
+/* 1. The Main Container */
+.interest-container {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  align-items: center;    /* Centers everything horizontally */
+  padding: 50px 20px;
+}
+
+/* 2. The Individual Item (Image + Text) */
+.interest-item {
+  max-width: 700px;       /* Keeps the paragraph from getting too wide */
+  text-align: center;     /* Centers the text inside the paragraph */
+  margin-bottom: 80px;    /* Space between different interests */
+}
+
+/* 3. The Image Styling */
+.interest-image {
+  width: 100%;
+  max-width: 500px;       /* Control how big the picture is */
+  height: 300px;
+  margin: 0 auto 30px auto; /* Centers the image div and adds space below */
+  overflow: hidden;
+  border-radius: 20px;    /* Beautiful rounded corners */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+.interest-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* Prevents image stretching */
+  transition: transform 0.5s ease; /* For the hover effect */
+}
+
+/* Interactive Hover: The picture zooms slightly when touched */
+.interest-item:hover .interest-image img {
+  transform: scale(1.05);
+}
+
+/* 4. Typography Styling */
+.interest-item h3 {
+  font-size: 2rem;
+  color: #9e182b;
+  margin-bottom: 15px;
+  font-family: 'Poppins', georgia; /* A modern font choice */
+}
+
+.interest-text {
+  font-size: 1.1rem;
+  line-height: 1.8;       /* Increases space between lines for readability */
+  color: #9e182b;
+  margin: 0 auto;
+}
+
+/* Container for the video */
+.interest-video {
+  width: 100%;
+  max-width: 500px;       /* Keeps it consistent with your images */
+  height: 300px;
+  margin: 0 auto 30px auto; 
+  overflow: hidden;
+  border-radius: 20px;    /* Matches your other cards */
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  background-color: #000; /* Black background while video loads */
+}
+
+/* The actual video element */
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* This is key! It makes the video fill the box nicely */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+/* Hover effect to make it interactive */
+.interest-item:hover .bg-video {
+  transform: scale(1.05); /* Slight zoom when you hover over the section */
+}
+
+.matcha-list {
+  list-style: none;         /* Removes boring bullets */
+  padding: 0;
+  margin-top: 15px;
+  display: inline-block;    /* Keeps the list centered with the text */
+  text-align: left;         /* Makes the items easy to read */
+}
+
+.matcha-list li {
+  background: #e8f5e9;      /* Light matcha green background */
+  margin: 5px 0;
+  padding: 8px 15px;
+  border-radius: 10px;
+  color: #2e7d32;           /* Dark green text */
+  font-size: 0.95rem;
+  border-left: 4px solid #66bb6a; /* Fun accent border */
+}
+
+.matcha-item {
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* The Link (Button Style) */
+.matcha-link {
+  display: block;
+  text-decoration: none; /* Removes the underline */
+  background-color: #ffffff;
+  color: #2e7d32; /* Deep Matcha Green */
+  padding: 15px 20px;
+  border: 2px solid #a5d6a7; /* Soft Sage Green */
+  border-radius: 50px; /* Makes it pill-shaped */
+  font-size: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect: The "Matcha Splash" */
+.matcha-link:hover {
+  background-color: #e8f5e9; /* Light Creamy Matcha */
+  border-color: #2e7d32;
+  color: #1b5e20;
+  transform: translateY(-3px); /* Lifts the button up */
+  box-shadow: 0 6px 12px rgba(46, 125, 50, 0.2);
+}
+
+/* Bold text inside the link */
+.matcha-link strong {
+  color: #1b5e20;
+  margin-right: 5px;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 20px; /* Matching your card style */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border: 5px solid white;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+  filter: grayscale(20%) contrast(1.1); /* Makes the map look more "aesthetic" */
+}
+
+.map-title {
+    display: flex;            /* Keeps it as a flex container */
+    justify-content: center;  /* Centers the text horizontally in flex mode */
+    align-items: center;      /* Centers it vertically if you add an icon later */
+    width: 100%;              /* Ensures it spans the full width of the page */
+    
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    color: #97a13b;           /* Your nice Matcha-like green */
+    font-style: italic;
+    margin: 20px 0;           /* Adds some space above and below the title */
+}
+
+.map-title:hover {
+    color: #5d6321; /* Darkens the green when you hover */
+    transform: scale(1.05); /* Makes it pop out slightly */
+    transition: 0.3s ease;
+}
+
+.interest-link {
+    text-decoration: none;      /* Removes the default underline */
+    color: #97a13b;             /* Your signature Matcha green */
+    position: relative;
+    padding: 2px 5px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid rgba(151, 161, 59, 0.3); /* Subtle green line */
+}
+
+.interest-link:hover {
+    color: #ffffff;             /* Text turns white on hover */
+    background-color: #97a13b;  /* Background fills with Matcha green */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(151, 161, 59, 0.4);
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Optional: Adding a small soccer ball icon after the link using CSS */
+.interest-link::after {
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.interest-link:hover::after {
+    opacity: 1;
+}
+
+.info-meta {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    font-size: 2px;
+    color: #777;
+    font-family: sans-serif;
+}
+
+.meta-item span {
+    font-weight: bold;
+    color: #97a13b; /* Your Matcha Green color! */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Subtle hover effect */
+.meta-item:hover {
+    color: #333;
+    cursor: default;
+}
